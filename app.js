@@ -8,9 +8,9 @@ var express         = require("express"),
     // Campground      = require("./models/campground"),
     // // Use comment schema from /models/comment.js file
     // Comment         = require("./models/comment"),
-    User            = require("./models/user"),
+    User            = require("./models/user");
     // Will clear every data and create new data from DB. (error driven code)
-    seedDB          = require("./seeds");
+    // seedDB          = require("./seeds");
 
 // REQUIRING ROUTES 
 var campgroundRoutes  = require("./routes/campgrounds"),
@@ -34,7 +34,7 @@ app.set("view engine", "ejs");
 // use public directory with absolute path
 app.use(express.static(__dirname + "/public"));
 // remove and create new data from db
-seedDB();
+// seedDB();
 
 
 
